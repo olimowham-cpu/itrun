@@ -1,15 +1,18 @@
 using System;
 
-class program
+class Program
 {
-    static void main()
+    static void Main()
     {
-        int A = -1;
-        int B = -5;
+        Console.Write(" R: ");
+        double R = Convert.ToDouble(Console.ReadLine());
 
-        bool result = (A >= 0) || (B < -2);
+        const double pi = 3.14; 
 
-        Console.WriteLine(result);
+        double L = 2 * pi * R;  
+        double S = pi * R * R;   
 
+        Console.WriteLine("d: " + L);
+        Console.WriteLine("П: " + S);
     }
 }

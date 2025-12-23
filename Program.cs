@@ -4,11 +4,11 @@ class Program
 {
     static void Main()
     {
-        Console.Write(" M: ");
-        int M = Convert.ToInt32(Console.ReadLine());
+        Console.Write("L: ");
+        int L = Convert.ToInt32(Console.ReadLine());
 
-        int a = M / 1000; 
+        int f= L / 100; 
 
-        Console.WriteLine("toon: " + a);
+        Console.WriteLine(": " + f);
     }
 }

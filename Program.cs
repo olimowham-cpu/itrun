@@ -1,25 +1,22 @@
-// See https://aka.ms/new-console-template for more informatio
-
-
 using System;
 
 class Program
+
 {
-    static void Main()
+static void Main()
+{
+
+    int a = 7;
+    int b = 6;
+    if (a > b)
     {
-
-
-        int a = int.Parse(Console.ReadLine());
-
-        if (a>0)
-            
-        {
-            Console.WriteLine(a+1);
-            
-        }
-        else
-        {
-            Console.WriteLine(a);
-        }
+        Console.WriteLine(a);
+        
     }
+    else
+    {
+        Console.WriteLine(b);
+    }
+
+}
 }

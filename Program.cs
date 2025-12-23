@@ -1,17 +1,15 @@
 using System;
 
-class Program
+class program
 {
-    static void Main()
+    static void main()
     {
-        Console.Write("a: ");
-        double a = Convert.ToDouble(Console.ReadLine());
+        int A = 2;
+        int B = 5;
+        int C = 8;
 
-        Console.Write(" b: ");
-        double b = Convert.ToDouble(Console.ReadLine());
+        bool result = (A < B) && (B < C);
 
-        double average = (a + b) / 2;
-
-        Console.WriteLine("= " + average);
+        Console.WriteLine(result);
     }
 }

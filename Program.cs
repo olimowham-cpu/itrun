@@ -1,29 +1,25 @@
-using System;
+using System ;
 
-class Program
+class program
 {
     static void Main()
     {
-
-        int a = 40;
-        int b = 5;
-        int c = 60;
-        int n;
-        if (a < b && a<c)
+        int a = 5;
+        int b = 4;
+        int c = 4;
+        if (a == b)
         {
-            n = b + c;
-        }
-        else if (b < a && b < c)
-        {
-            n = c + a;
-        }
-        else
-        {
-            n = a + b;
-            
+            Console.WriteLine(c);
         }
 
-        Console.WriteLine(n);
-
+        else if (a == c)
+        {
+            Console.WriteLine(b);
+        }
+        else if (b == c)
+        {
+            Console.WriteLine(a);
+        }
+        
     }
 }

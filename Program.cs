@@ -4,37 +4,42 @@ class Program
 {
     static void Main()
     {
-        
-        int day = int.Parse(Console.ReadLine());
+        Console.Write(" b: ");
+        int month = Convert.ToInt32(Console.ReadLine());
 
-        string Name;
+        int days;
 
-        switch (day)
+        switch (month)
         {
-            case 1:
-                Name = "poni"; 
+            case 1: 
+            case 3: 
+            case 5: 
+            case 7: 
+            case 8: 
+            case 10: 
+            case 12:
+                days = 31;
                 break;
-            case 2:
-                Name = "vtorn";    
-                break;
-            case 3:
-                Name = "sreda";       
-                break;
+
             case 4:
-                Name = "chetverg";    
+            case 6: 
+            case 9: 
+            case 11: 
+                days = 30;
                 break;
-            case 5:
-                Name = "5nitsa";   
+
+            case 2:
+                days = 28;
                 break;
-            case 6:
-                Name = "subbota";   
+
+            default:
+                days = -1;
                 break;
-            case 7:
-                Name = "voskresenie";
-                break;
-           
         }
 
-        Console.WriteLine("  " + Name);
+        if (days != -1)
+            Console.WriteLine("= " + days);
+        else
+            Console.WriteLine("error");
     }
 }

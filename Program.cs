@@ -4,19 +4,23 @@ class Program
 {
     static void Main()
     {
-        Console.Write(" a: ");
-        double a = Convert.ToDouble(Console.ReadLine());
+        Console.Write(" A: ");
+        int A = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write(" b: ");
-        double b = Convert.ToDouble(Console.ReadLine());
+        Console.Write(" B: ");
+        int B = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write(" c: ");
-        double c = Convert.ToDouble(Console.ReadLine());
+        Console.Write(" C: ");
+        int C = Convert.ToInt32(Console.ReadLine());
 
-        double V = a * b * c;               
-        double S = 2 * (a * b + b * c + a * c);
+        int temp = A;
+        A = B;
+        B = C;
+        C = temp;
 
-        Console.WriteLine("= " + V);
-        Console.WriteLine("= " + S);
+        Console.WriteLine("new:");
+        Console.WriteLine("A = " + A);
+        Console.WriteLine("B = " + B);
+        Console.WriteLine("C = " + C);
     }
 }

@@ -1,21 +1,16 @@
 using System;
 
-class Program
+class program
 {
     static void Main()
     {
-        Console.Write("A: ");
-        double A = Convert.ToDouble(Console.ReadLine());
-
-        Console.Write("N : ");
-        int N = Convert.ToInt32(Console.ReadLine());
-
-        double r = 1;
-
-        for (int i = 1; i <= N; i++)
+        double b;
+        for ( b = 0.1; b <= 1.0;b +=0.1)
         {
-            r *= A;
-            Console.WriteLine("A*A=" + i + " = " + r);
+            Console.WriteLine(b*1);
         }
+
+        
+
     }
 }

@@ -1,28 +1,29 @@
 using System;
 
 class Program
-
 {
     static void Main()
     {
-        int a = int.Parse(Console.ReadLine());
-        int b = int.Parse(Console.ReadLine());
-        int c = int.Parse(Console.ReadLine());
-        if (a >b)
-        {
-            Console.WriteLine(a);
-        }
 
-        if (b >a)
+        int a = 40;
+        int b = 5;
+        int c = 60;
+        int n;
+        if (a < b && a<c)
         {
-            Console.WriteLine(b);
+            n = b + c;
         }
-
-        if (c <b)
+        else if (b < a && b < c)
         {
-            Console.WriteLine(c);
+            n = c + a;
         }
+        else
+        {
+            n = a + b;
             
+        }
+
+        Console.WriteLine(n);
 
     }
 }

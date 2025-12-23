@@ -4,11 +4,11 @@ class Program
 {
     static void Main()
     {
-        Console.Write("d: ");
-        double d = Convert.ToDouble(Console.ReadLine());
+        Console.Write(" M: ");
+        int M = Convert.ToInt32(Console.ReadLine());
 
-         double pi = 3.14;  
-        double a = pi * d;       
-        Console.WriteLine("= " + a);
+        int a = M / 1000; 
+
+        Console.WriteLine("toon: " + a);
     }
 }

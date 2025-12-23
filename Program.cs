@@ -1,14 +1,14 @@
 using System;
 
-class Program
+class program
 {
-    static void Main()
+    static void main()
     {
-        Console.Write("L: ");
-        int L = Convert.ToInt32(Console.ReadLine());
+        int A = 10;
 
-        int f= L / 100; 
+        bool result = A % 2 == 0;
 
-        Console.WriteLine(": " + f);
+        Console.WriteLine(result);
+
     }
 }

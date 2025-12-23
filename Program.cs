@@ -5,35 +5,40 @@ class Program
     static void Main()
     {
         
-        int un =int.Parse(Console.ReadLine());
+        int day = int.Parse(Console.ReadLine());
 
-        Console.Write("dlina: ");
-        double len = int.Parse(Console.ReadLine());
+        string Name;
 
-        double leng;
-
-        switch (un)
+        switch (day)
         {
             case 1:
-                leng = len / 10;
+                Name = "poni"; 
                 break;
-            case 2: 
-                leng = len * 1000;
+            case 2:
+                Name = "vtorn";    
                 break;
-            case 3: 
-                leng = len;
+            case 3:
+                Name = "sreda";       
                 break;
             case 4:
-                leng = len / 1000;
+                Name = "chetverg";    
                 break;
-            case 5: 
-                leng = len / 100;
+            case 5:
+                Name = "5nitsa";   
+                break;
+            case 6:
+                Name = "subbota";   
+                break;
+            case 7:
+                Name = "voskresenie";
                 break;
             default:
-                Console.WriteLine(" error");
-                return;
+                Name = "error";
+                break;
+          
         }
+        
 
-        Console.WriteLine("Длина: " + leng);
+        Console.WriteLine("  " + Name);
     }
-} 
+}

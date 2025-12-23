@@ -1,3 +1,4 @@
+
 using System;
 
 class program
@@ -5,14 +6,10 @@ class program
     static void main()
     {
         int A = 5;
-        int B = -3;
-        int C = 0;
+        int B = 3;
 
-        bool num =
-            (A > 0 && B <= 0 && C <= 0) ||
-            (B > 0 && A <= 0 && C <= 0) ||
-            (C > 0 && A <= 0 && B <= 0);
+        bool result = (A > 2) && (B <= 3);
 
-        Console.WriteLine(num);
+        Console.WriteLine(result);
     }
 }

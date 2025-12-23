@@ -2,15 +2,16 @@ using System;
 
 class program
 {
-    static void Main()
+    static void main()
     {
-        int A = 55;
+
+
+        int A = 8;
         int B = 5;
-        int C = 4;
+        int C = 2;
 
         bool result = (A < B && B < C) || (C < B && B < A);
 
         Console.WriteLine(result);
-
     }
 }

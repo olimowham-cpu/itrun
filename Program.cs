@@ -1,16 +1,22 @@
 using System;
 
-class program
+class Program
 {
     static void Main()
     {
-        int b;
-        for ( b = 1; b <= 10; b++)
+        Console.Write(" A: ");
+        int A = int.Parse(Console.ReadLine());
+
+        Console.Write("B : ");
+        int B = int.Parse(Console.ReadLine());
+
+        for (int i = A; i <= B; i++)
         {
-            Console.WriteLine(b*10);
+            int count = i - A + 1;
+            for (int j = 0; j < count; j++)
+            {
+                Console.Write(i + " ");
+            }
         }
-
-        
-
     }
 }

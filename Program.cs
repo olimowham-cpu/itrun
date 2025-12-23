@@ -1,14 +1,14 @@
 using System;
 
-class program
+class Program
 {
-    static void main()
+    static void Main()
     {
-        int A = 10;
+        Console.Write(" a: ");
+        double a = Convert.ToDouble(Console.ReadLine());
 
-        bool result = A % 2 == 0;
+        double P = 4 * a;
 
-        Console.WriteLine(result);
-
+        Console.WriteLine("= " + P);
     }
 }

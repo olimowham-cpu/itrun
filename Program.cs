@@ -4,15 +4,19 @@ class Program
 {
     static void Main()
     {
-        Console.Write(" R: ");
-        double R = Convert.ToDouble(Console.ReadLine());
+        Console.Write(" a: ");
+        double a = Convert.ToDouble(Console.ReadLine());
 
-        const double pi = 3.14; 
+        Console.Write(" b: ");
+        double b = Convert.ToDouble(Console.ReadLine());
 
-        double L = 2 * pi * R;  
-        double S = pi * R * R;   
+        Console.Write(" c: ");
+        double c = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("d: " + L);
-        Console.WriteLine("П: " + S);
+        double V = a * b * c;               
+        double S = 2 * (a * b + b * c + a * c);
+
+        Console.WriteLine("= " + V);
+        Console.WriteLine("= " + S);
     }
 }

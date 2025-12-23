@@ -4,14 +4,23 @@ class Program
 {
     static void Main()
     {
-        int x = int.Parse(Console.ReadLine());
-        if (x > 0)
+        int a = int.Parse(Console.ReadLine());
+        if (a >0)
         {
-            Console.WriteLine(x+1);
+            Console.WriteLine(a+1);
+        }
+
+        else if (a <= 0)
+        {
+            Console.WriteLine(a+2);
+        }
+        else if(a==0)
+        {
+            Console.WriteLine(10);
         }
         else
         {
-            Console.WriteLine(x-2);
+            Console.WriteLine(a==10);
         }
     }
 }

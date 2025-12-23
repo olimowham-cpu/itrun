@@ -1,25 +1,36 @@
-using System ;
+using System;
 
 class program
 {
     static void Main()
     {
-        int a = 5;
-        int b = 4;
-        int c = 4;
-        if (a == b)
+        int a = 4;
+        int b = 5;
+        int c = 5;
+        int d = 5;
+
+
+        if (a == b && b == c)
         {
-            Console.WriteLine(c);
+            Console.WriteLine(4);
         }
 
-        else if (a == c)
+        else if (a == b && b == d)
         {
-            Console.WriteLine(b);
+            Console.WriteLine(3);
         }
-        else if (b == c)
+
+        else if (a == c && c == d)
         {
-            Console.WriteLine(a);
+            Console.WriteLine(2);
         }
+
+        else if (b == c && c == d)
+        {
+            Console.WriteLine(1);
+        }
+        
+
         
     }
 }

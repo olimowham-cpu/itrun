@@ -4,42 +4,36 @@ class Program
 {
     static void Main()
     {
-        Console.Write(" b: ");
-        int month = Convert.ToInt32(Console.ReadLine());
+        
+        int un =int.Parse(Console.ReadLine());
 
-        int days;
+        Console.Write("dlina: ");
+        double len = int.Parse(Console.ReadLine());
 
-        switch (month)
+        double leng;
+
+        switch (un)
         {
-            case 1: 
+            case 1:
+                leng = len / 10;
+                break;
+            case 2: 
+                leng = len * 1000;
+                break;
             case 3: 
-            case 5: 
-            case 7: 
-            case 8: 
-            case 10: 
-            case 12:
-                days = 31;
+                leng = len;
                 break;
-
             case 4:
-            case 6: 
-            case 9: 
-            case 11: 
-                days = 30;
+                leng = len / 1000;
                 break;
-
-            case 2:
-                days = 28;
+            case 5: 
+                leng = len / 100;
                 break;
-
             default:
-                days = -1;
-                break;
+                Console.WriteLine(" error");
+                return;
         }
 
-        if (days != -1)
-            Console.WriteLine("= " + days);
-        else
-            Console.WriteLine("error");
+        Console.WriteLine("Длина: " + leng);
     }
-}
+} 

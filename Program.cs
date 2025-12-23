@@ -1,36 +1,21 @@
 using System;
 
-class program
+class Program
 {
     static void Main()
     {
-        int a = 4;
-        int b = 5;
-        int c = 5;
-        int d = 5;
+        Console.Write("A: ");
+        double A = Convert.ToDouble(Console.ReadLine());
 
+        Console.Write("N : ");
+        int N = Convert.ToInt32(Console.ReadLine());
 
-        if (a == b && b == c)
+        double r = 1;
+
+        for (int i = 1; i <= N; i++)
         {
-            Console.WriteLine(4);
+            r *= A;
+            Console.WriteLine("A*A=" + i + " = " + r);
         }
-
-        else if (a == b && b == d)
-        {
-            Console.WriteLine(3);
-        }
-
-        else if (a == c && c == d)
-        {
-            Console.WriteLine(2);
-        }
-
-        else if (b == c && c == d)
-        {
-            Console.WriteLine(1);
-        }
-        
-
-        
     }
 }

@@ -1,15 +1,40 @@
-
 using System;
 
-class program
+class Program
 {
-    static void main()
+    static void Main()
     {
-        int A = 5;
-        int B = 3;
+        
+        int day = int.Parse(Console.ReadLine());
 
-        bool result = (A > 2) && (B <= 3);
+        string Name;
 
-        Console.WriteLine(result);
+        switch (day)
+        {
+            case 1:
+                Name = "poni"; 
+                break;
+            case 2:
+                Name = "vtorn";    
+                break;
+            case 3:
+                Name = "sreda";       
+                break;
+            case 4:
+                Name = "chetverg";    
+                break;
+            case 5:
+                Name = "5nitsa";   
+                break;
+            case 6:
+                Name = "subbota";   
+                break;
+            case 7:
+                Name = "voskresenie";
+                break;
+           
+        }
+
+        Console.WriteLine("  " + Name);
     }
 }

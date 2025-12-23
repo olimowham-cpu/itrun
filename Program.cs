@@ -4,11 +4,14 @@ class Program
 {
     static void Main()
     {
-        Console.Write(" a: ");
+        Console.Write("a: ");
         double a = Convert.ToDouble(Console.ReadLine());
 
-        double P = 4 * a;
+        Console.Write(" b: ");
+        double b = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("= " + P);
+        double average = (a + b) / 2;
+
+        Console.WriteLine("= " + average);
     }
 }

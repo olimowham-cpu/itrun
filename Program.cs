@@ -1,22 +1,15 @@
 using System;
 
-class Program
+class program
 {
-    static void Main()
+    static void main()
     {
-        Console.Write(" A: ");
-        int A = int.Parse(Console.ReadLine());
+        int A = -1;
+        int B = -5;
 
-        Console.Write("B : ");
-        int B = int.Parse(Console.ReadLine());
+        bool result = (A >= 0) || (B < -2);
 
-        for (int i = A; i <= B; i++)
-        {
-            int count = i - A + 1;
-            for (int j = 0; j < count; j++)
-            {
-                Console.Write(i + " ");
-            }
-        }
+        Console.WriteLine(result);
+
     }
 }
